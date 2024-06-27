@@ -28,7 +28,7 @@ const Chart = ({ data, chartType, onClick }) => {
         {chartType === 'line' && (
           <LineChart
             width={window.innerWidth * 0.9}
-            height={window.innerHeight * 0.6}
+            height={window.innerHeight * 0.7}
             data={data}
             onClick={onClick}
           >
@@ -44,7 +44,7 @@ const Chart = ({ data, chartType, onClick }) => {
         {chartType === 'bar' && (
           <BarChart
             width={window.innerWidth * 0.9}
-            height={window.innerHeight * 0.6}
+            height={window.innerHeight * 0.7}
             data={data}
             onClick={onClick}
           >
@@ -60,7 +60,7 @@ const Chart = ({ data, chartType, onClick }) => {
         {chartType === 'pie' && (
           <PieChart
             width={window.innerWidth * 0.9}
-            height={window.innerHeight * 0.6}
+            height={400}
             onClick={onClick}
           >
             <Pie
