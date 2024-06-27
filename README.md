@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Chart Visualization with Recharts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based application that allows users to visualize data using different chart types (Line, Bar) with Recharts. Users can also export charts as PNG images.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Line, Bar, and Pie Charts**: Visualize your data in different formats.
+- **Timeframe Selection**: Filter data by daily, weekly, or monthly averages.
+- **Chart Export**: Export your chart as a PNG image.
+- **Responsive Design**: Ensures the charts and UI are responsive and look good on various devices.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the Repository**:
+    ```sh
+    git clone https://github.com/yourusername/chart-visualization.git
+    cd chart-visualization
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Install Dependencies**:
+    npm install
 
-### `npm test`
+3. **Start the Development Server**:
+    ```sh
+    npm start
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+- `src/`
+  - `components/`
+    - `Chart.js`: Component for rendering the charts.
+    - `TimeframeSelector.js`: Component for selecting the timeframe for data filtering.
+  - `data/`
+    - `data.json`: Sample data file.
+  - `styles/`
+    - `App.css`: Styles for the App component.
+    - `Chart.css`: Styles for the Chart component.
+  - `App.js`: Main App component.
+  - `index.js`: Entry point of the React application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Run the Application**:
+    npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Open the Application**:
+   - Open your browser and navigate to `https://main--reliable-eclair-13a28c.netlify.app/`.
 
-### `npm run eject`
+3. **Select Timeframe**:
+   - Use the timeframe selector to filter data by daily, weekly, or monthly averages.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Change Chart Type**:
+   - Use the buttons to switch between Line, Bar, and Pie charts.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. **Export Chart**:
+   - Click the "Export As PNG" button to download the chart as a PNG image.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Sample Data Format
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The data should be in JSON format with the following structure:
+```json
+[
+  {
+    "timestamp": "2023-01-01T00:00:00Z",
+    "value": 100
+  },
+  {
+    "timestamp": "2023-01-02T00:00:00Z",
+    "value": 150
+  }
+]
 
-## Learn More
+Customization
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Chart Data: Replace data.json with your own data file.
+    Styles: Modify App.css and Chart.css to customize the look and feel.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
