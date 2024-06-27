@@ -60,7 +60,7 @@ const Chart = ({ data, chartType, onClick }) => {
         {chartType === 'pie' && (
           <PieChart
             width={window.innerWidth * 0.9}
-            height={400}
+            height={500}
             onClick={onClick}
           >
             <Pie
