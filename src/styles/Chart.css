@@ -1,0 +1,37 @@
+.chart-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border: 1px solid;
+}
+.export-button {
+    background-color: #E3F20A;
+    padding: 10px 20px;
+    border: 0px;
+    color: #000;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.export-button span {
+    background-color: #000;
+    padding: 5px;
+    border-radius: 8px;
+    color: #E3F20A;
+    margin-left: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.export-button:hover {
+    background-color: #000;
+    color: #E3F20A;
+}
+
+.export-button:hover span {
+    background-color: #E3F20A;
+    color: #000;
+}
+
