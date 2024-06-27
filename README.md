@@ -1,61 +1,38 @@
-# Chart Visualization with Recharts
+#Chart Visualization App
 
-This project is a React-based application that allows users to visualize data using different chart types (Line, Bar) with Recharts. Users can also export charts as PNG images.
+This repository contains a React application for visualizing data using various chart types.
 
-## Features
+#Features
 
-- **Line, Bar, and Pie Charts**: Visualize your data in different formats.
-- **Timeframe Selection**: Filter data by daily, weekly, or monthly averages.
-- **Chart Export**: Export your chart as a PNG image.
-- **Responsive Design**: Ensures the charts and UI are responsive and look good on various devices.
+    Line Chart
+    Bar Chart
+    Export charts as PNG
 
-## Installation
+#Installation
 
-1. **Clone the Repository**:
-    ```sh
-    git clone https://github.com/yourusername/chart-visualization.git
-    cd chart-visualization
-    ```
+To run this project locally, follow these steps:
 
-2. **Install Dependencies**:
-    npm install
+    Clone the repository: git clone https://github.com/Bharani0012/chartApp.git
 
-3. **Start the Development Server**:
-    ```sh
-    npm start
-    ```
+    Navigate into the project directory: cd chartApp
 
-## Project Structure
+Install dependencies: npm install
 
-- `src/`
-  - `components/`
-    - `Chart.js`: Component for rendering the charts.
-    - `TimeframeSelector.js`: Component for selecting the timeframe for data filtering.
-  - `data/`
-    - `data.json`: Sample data file.
-  - `styles/`
-    - `App.css`: Styles for the App component.
-    - `Chart.css`: Styles for the Chart component.
-  - `App.js`: Main App component.
-  - `index.js`: Entry point of the React application.
+Start the development server: npm start
 
-## Usage
+Open http://localhost:3000 to view it in the browser.
 
-1. **Run the Application**:
-    npm start
+Usage
 
-2. **Open the Application**:
-   - Open your browser and navigate to `https://main--reliable-eclair-13a28c.netlify.app/`.
+    Select a timeframe to view data in different intervals: daily, weekly, monthly.
+    Switch between chart types (Line, Bar) to visualize data differently.
+    Click on the export button to save the current chart as a PNG file.
 
-3. **Select Timeframe**:
-   - Use the timeframe selector to filter data by daily, weekly, or monthly averages.
+Technologies Used
 
-4. **Change Chart Type**:
-   - Use the buttons to switch between Line, Bar, and Pie charts.
-
-5. **Export Chart**:
-   - Click the "Export As PNG" button to download the chart as a PNG image.
-
+    React.js
+    Recharts
+    HTML/CSS
 ## Sample Data Format
 
 The data should be in JSON format with the following structure:
@@ -71,8 +48,8 @@ The data should be in JSON format with the following structure:
   }
 ]
 
-Customization
+
+#Customization
 
     Chart Data: Replace data.json with your own data file.
     Styles: Modify App.css and Chart.css to customize the look and feel.
-
