@@ -1,6 +1,6 @@
 import html2canvas from 'html2canvas';
 import React from 'react';
-import { Bar, BarChart, Brush, CartesianGrid, Cell, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, Brush, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 import "../styles/Chart.css";
 
 const Chart = ({ data, chartType, onClick }) => {
@@ -57,29 +57,7 @@ const Chart = ({ data, chartType, onClick }) => {
             <Brush dataKey="timestamp" height={30} stroke="#8884d8" />
           </BarChart>
         )}
-        {chartType === 'pie' && (
-          <PieChart
-            width={window.innerWidth * 0.9}
-            height={500}
-            onClick={onClick}
-          >
-            <Pie
-              data={data}
-              dataKey="value"
-              nameKey="timestamp"
-              cx="50%"
-              cy="50%"
-              outerRadius={Math.min(window.innerWidth, window.innerHeight) * 0.3}
-              fill="#8884d8"
-              label
-            >
-              {data.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={['#0088FE', '#00C49F', '#FFBB28', '#FF8042'][index % 4]} />
-              ))}
-            </Pie>
-            <Tooltip />
-          </PieChart>
-        )}
+        
       </div>
     </>
   );

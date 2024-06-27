@@ -158,12 +158,6 @@ const App = () => {
           Line Chart
         </button>
         <button
-          onClick={() => handleChartTypeChange('pie')}
-          className={`chart-type-button ${chartType === 'pie' ? 'active' : ''}`}
-        >
-          Pie Chart
-        </button>
-        <button
           onClick={() => handleChartTypeChange('bar')}
           className={`chart-type-button ${chartType === 'bar' ? 'active' : ''}`}
         >
