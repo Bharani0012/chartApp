@@ -26,18 +26,28 @@ const Chart = ({ data, chartType, onClick }) => {
       </button>
       <div className='chart-container'>
         {chartType === 'line' && (
-          <LineChart width={600} height={300} data={data} onClick={onClick}>
+          <LineChart
+            width={window.innerWidth * 0.9}
+            height={window.innerHeight * 0.6}
+            data={data}
+            onClick={onClick}
+          >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="timestamp" />
             <YAxis />
             <Tooltip />
             <Legend />
-            <Line type="monotone" dataKey="value" stroke="#8884d8" activeDot={{ r: 8 }} />
+            <Line type="monotone" dataKey="value" stroke="#8884d8" activeDot={{ r: 16 }} />
             <Brush dataKey="timestamp" height={30} stroke="#8884d8" />
           </LineChart>
         )}
         {chartType === 'bar' && (
-          <BarChart width={600} height={300} data={data} onClick={onClick}>
+          <BarChart
+            width={window.innerWidth * 0.9}
+            height={window.innerHeight * 0.6}
+            data={data}
+            onClick={onClick}
+          >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="timestamp" />
             <YAxis />
@@ -48,14 +58,18 @@ const Chart = ({ data, chartType, onClick }) => {
           </BarChart>
         )}
         {chartType === 'pie' && (
-          <PieChart width={600} height={500} onClick={onClick}>
+          <PieChart
+            width={window.innerWidth * 0.9}
+            height={window.innerHeight * 0.6}
+            onClick={onClick}
+          >
             <Pie
               data={data}
               dataKey="value"
               nameKey="timestamp"
               cx="50%"
               cy="50%"
-              outerRadius={200}
+              outerRadius={Math.min(window.innerWidth, window.innerHeight) * 0.3}
               fill="#8884d8"
               label
             >
