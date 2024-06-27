@@ -19,7 +19,7 @@ const App = () => {
     if (chartData.length > 0) {
       console.log('Chart data set, filtering data');
       filterData(timeframe);
-    }
+    }// eslint-disable-next-line
   }, [chartData, timeframe]);
 
   const handleTimeframeChange = (newTimeframe) => {
